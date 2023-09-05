@@ -675,7 +675,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e7fcb41838ed53448f06b73fa2dadfc, type: 2}
+  - {fileID: 2100000, guid: 9c70d55d1dcfb354cb6a4983d5863def, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -923,7 +923,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7943768b5edb27047922a46ec210b880, type: 2}
+  - {fileID: 2100000, guid: 123ec372371d618479e2e4f895c3be7c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1703,7 +1703,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7943768b5edb27047922a46ec210b880, type: 2}
+  - {fileID: 2100000, guid: 123ec372371d618479e2e4f895c3be7c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2221,7 +2221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 538a2c864ba9bea4c9559a0929dc08cc, type: 2}
+  - {fileID: 2100000, guid: 1382e609fd752b14eb83680e22724d9b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3274,7 +3274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 61f992a7049fd404784cb071edeb4b8f, type: 2}
+  - {fileID: 2100000, guid: 9acf2b9e7524fd64683ff287fab5a61b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3680,6 +3680,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: IceTower
       objectReference: {fileID: 0}
+    - target: {fileID: 1971937328786384583, guid: e394e2137e2963d46902248f11128543, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f30721f6f3eb4945923e3ed9d542e72, type: 2}
+    - target: {fileID: 2784541324772438189, guid: e394e2137e2963d46902248f11128543, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f30721f6f3eb4945923e3ed9d542e72, type: 2}
     - target: {fileID: 4053701124240278762, guid: e394e2137e2963d46902248f11128543, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3724,6 +3732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5616418874260778178, guid: e394e2137e2963d46902248f11128543, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e7fcb41838ed53448f06b73fa2dadfc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
