@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89e15635e67ecd41aba3d50b2a60346, type: 3}
+  m_Name: FireStaffData
+  m_EditorClassIdentifier: 
+  weaponName: Fire Staff
+  damage: 10
+  fireRate: 1
+  bulletPrefab: {fileID: 7907483603896092374, guid: 813506fa1a548cc4ea95e1fc06c6a27b, type: 3}
+  shootSound: {fileID: 0}

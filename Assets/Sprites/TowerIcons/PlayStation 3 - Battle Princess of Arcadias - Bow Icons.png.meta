@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: dd22c4a5993b1f545ad56ed462b0e68f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_19
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 792
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849fa3a5f6e47494fadc748ace6beda5
+      internalID: -1199675064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_20
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 791
+        width: 116
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f9680e3f6417349a04efdd626f52b3
+      internalID: -1234704276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_21
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 791
+        width: 116
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977f4aa0a87466343aedc72a9ad73e2c
+      internalID: 1736151017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_22
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 791
+        width: 116
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538b222e9f4bc794a958e569a4beb427
+      internalID: 1595052608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_23
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 791
+        width: 116
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab021f3aee9d2594aba15e4511bb8eff
+      internalID: 621083215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_27
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 666
+        width: 120
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e60e74bd315b6343b3a38a8eec842a7
+      internalID: 1778445629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_28
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 663
+        width: 122
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee08c978ba5ebfe41bdb4b0d97086f66
+      internalID: -1446770447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_29
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 663
+        width: 122
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcf50183ca53b9498395a9a5d359c84
+      internalID: -420322563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_30
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 665
+        width: 122
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b1cf5c99f51ab4b9d278c11cb2e8d2
+      internalID: 1526383871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 3 - Battle Princess of Arcadias - Bow Icons_31
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 663
+        width: 122
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bc2e3958324ca4ea028b2d78da16e5
+      internalID: -865438831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c279d4afd9adc3341a4732c8f493b285
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_0: -440688057
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_1: 542366711
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_10: 1183421667
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_11: 1740558770
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_12: -1857344390
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_13: -1052155636
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_14: -1838429456
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_15: -25934741
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_16: 25858971
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_17: -1445077253
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_18: -138064260
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_19: -1199675064
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_2: 1615410608
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_20: -1234704276
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_21: 1736151017
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_22: 1595052608
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_23: 621083215
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_24: -47389585
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_25: 1549699434
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_26: 700837115
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_27: 1778445629
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_28: -1446770447
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_29: -420322563
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_3: 1178233059
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_30: 1526383871
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_31: -865438831
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_32: 463583954
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_33: 150976009
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_34: -99351341
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_35: -1446170487
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_36: -345044188
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_37: 285207655
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_38: -1007599906
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_39: -345717196
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_4: -929494668
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_40: -479415743
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_41: 390960551
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_42: -792715048
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_43: -1438037508
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_44: 740817634
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_45: 280701689
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_46: 581912604
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_47: -872452003
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_48: 1785037821
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_49: -1366803919
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_5: -642525203
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_50: -2110440390
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_51: 578457614
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_52: -2117248149
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_53: -1655105756
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_54: -1569103871
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_55: -1467910572
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_56: -143290785
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_57: -1139074905
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_58: -1169713391
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_59: -419791655
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_6: -2119113232
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_60: 1433737627
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_7: -641690963
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_8: 805460571
+      PlayStation 3 - Battle Princess of Arcadias - Bow Icons_9: -66273412
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

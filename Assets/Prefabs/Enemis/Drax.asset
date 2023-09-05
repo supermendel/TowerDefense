@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c85903bbd2ba419265ad582918a9b, type: 3}
+  m_Name: Drax
+  m_EditorClassIdentifier: 
+  enemyName: Drax
+  health: 35
+  attackDamage: 30
+  timeToComplete: 30
+  coinsAmount: 25
+  attackRate: 0
+  speed: 0
+  model: {fileID: 8409606358955444691, guid: 8d377a9dc57d8a440856096468d3f457, type: 3}
