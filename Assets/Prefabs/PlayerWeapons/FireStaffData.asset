@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: FireStaffData
   m_EditorClassIdentifier: 
   weaponName: Fire Staff
-  damage: 10
-  fireRate: 1
+  baseDamage: 10
+  baseFireRate: 1
   bulletPrefab: {fileID: 7907483603896092374, guid: 813506fa1a548cc4ea95e1fc06c6a27b, type: 3}
+  weaponLvl: 1
+  MaxLevel: 5
   shootSound: {fileID: 0}
