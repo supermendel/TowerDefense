@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,24 +12,27 @@ public class PlayerController : MonoBehaviour
     [Header("Stats")]
     public int speed;
     public int rotateSpeed;
+	public int sceneIndex;
 
     public Vector2 rotation;
 
     void Awake()
     {
         cC= gameObject.GetComponent<CharacterController>();
-        
+		sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
     void Update()
     {
+		if (sceneIndex == 0) return; //In Menu
 		if (LevelManager.state == SpawnState.LevelLoss) return;
         Movement(); 
       
 	}
 	private void LateUpdate()
 	{
+		if (sceneIndex == 0) return; //In Menu
 		if (LevelManager.state == SpawnState.LevelLoss) return;
 		Rotate();
 	}
