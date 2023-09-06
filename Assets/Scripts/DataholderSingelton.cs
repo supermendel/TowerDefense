@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DataholderSingelton : MonoBehaviour, ISaveable
 {
-	public WeaponData FireStaffData;
-	public PlayerData PlayerData;
+	public static WeaponData FireStaffData;
+	public static PlayerData PlayerData;
 	private static DataholderSingelton instance;
 	public static DataholderSingelton Instance
 	{
