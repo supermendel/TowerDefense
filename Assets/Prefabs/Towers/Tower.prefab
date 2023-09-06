@@ -148,8 +148,8 @@ GameObject:
   - component: {fileID: 2381534430380301758}
   - component: {fileID: 2777158487128569824}
   - component: {fileID: 5822950508825113320}
-  - component: {fileID: -4395285874470266345}
   - component: {fileID: 404385079433385778}
+  - component: {fileID: -4395285874470266345}
   m_Layer: 3
   m_Name: Tower
   m_TagString: CantPlace
@@ -244,28 +244,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.01, z: 0}
---- !u!114 &-4395285874470266345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352407203039817024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690740eec6630b344843776e6db3bad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 0
-  cost: 50
-  beamTower: 0
-  arrackRate: 1
-  canAttack: 0
-  projectileSpawnpos: {fileID: 3887545728731694682}
-  projectilePrefab: {fileID: 6423101869495836584, guid: f921f86cb845a284fb5399be9c2fb283, type: 3}
-  attackPower: 15
-  beamProjectile: {fileID: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &404385079433385778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -293,3 +272,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4395285874470266345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352407203039817024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690740eec6630b344843776e6db3bad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 0
+  cost: 50
+  beamTower: 0
+  arrackRate: 1
+  canAttack: 0
+  projectileSpawnpos: {fileID: 3887545728731694682}
+  projectilePrefab: {fileID: 6423101869495836584, guid: f921f86cb845a284fb5399be9c2fb283, type: 3}
+  attackPower: 15
+  beamProjectile: {fileID: 0}
