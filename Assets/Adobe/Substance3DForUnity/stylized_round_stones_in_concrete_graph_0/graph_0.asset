@@ -13,45 +13,45 @@ MonoBehaviour:
   m_Name: graph_0
   m_EditorClassIdentifier: 
   AssetPath: Assets/Adobe/Substance3DForUnity/stylized_round_stones_in_concrete.sbsar
-  RawData: {fileID: -244192453324840774, guid: 29e0ec1f16d6940448bed7ec7f259422, type: 3}
+  RawData: {fileID: 0}
   Name: graph_0
   IsRoot: 1
   FlagedForDelete: 0
-  GUID: ddd55ca9-884d-4d82-a454-d5eaefb8afa0
+  GUID: 6a309ddb-d90d-449a-91b1-22fa8f85d290
   Index: 0
   Input:
-  - rid: 8435708450743255096
-  - rid: 8435708450743255097
-  - rid: 8435708450743255098
-  - rid: 8435708450743255099
-  - rid: 8435708450743255100
-  - rid: 8435708450743255101
-  - rid: 8435708450743255102
-  - rid: 8435708450743255103
-  - rid: 8435708450743255104
-  - rid: 8435708450743255105
-  - rid: 8435708450743255106
-  - rid: 8435708450743255107
-  - rid: 8435708450743255108
-  - rid: 8435708450743255109
-  - rid: 8435708450743255110
-  - rid: 8435708450743255111
-  - rid: 8435708450743255112
-  - rid: 8435708450743255113
-  - rid: 8435708450743255114
-  - rid: 8435708450743255115
-  - rid: 8435708450743255116
-  - rid: 8435708450743255117
-  - rid: 8435708450743255118
-  - rid: 8435708450743255119
-  - rid: 8435708450743255120
-  - rid: 8435708450743255121
-  - rid: 8435708450743255122
-  - rid: 8435708450743255123
-  - rid: 8435708450743255124
-  - rid: 8435708450743255125
-  - rid: 8435708450743255126
-  - rid: 8435708450743255127
+  - rid: 1430321862873186360
+  - rid: 1430321862873186361
+  - rid: 1430321862873186362
+  - rid: 1430321862873186363
+  - rid: 1430321862873186364
+  - rid: 1430321862873186365
+  - rid: 1430321862873186366
+  - rid: 1430321862873186367
+  - rid: 1430321862873186368
+  - rid: 1430321862873186369
+  - rid: 1430321862873186370
+  - rid: 1430321862873186371
+  - rid: 1430321862873186372
+  - rid: 1430321862873186373
+  - rid: 1430321862873186374
+  - rid: 1430321862873186375
+  - rid: 1430321862873186376
+  - rid: 1430321862873186377
+  - rid: 1430321862873186378
+  - rid: 1430321862873186379
+  - rid: 1430321862873186380
+  - rid: 1430321862873186381
+  - rid: 1430321862873186382
+  - rid: 1430321862873186383
+  - rid: 1430321862873186384
+  - rid: 1430321862873186385
+  - rid: 1430321862873186386
+  - rid: 1430321862873186387
+  - rid: 1430321862873186388
+  - rid: 1430321862873186389
+  - rid: 1430321862873186390
+  - rid: 1430321862873186391
   Output:
   - Index: 0
     VirtualOutputIndex: 9
@@ -61,7 +61,7 @@ MonoBehaviour:
       Index: 0
       Type: 8
       Channel: diffuse
-    OutputTexture: {fileID: 2800000, guid: 18f8551755bf2e04b8c00b47ac044c1c, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -77,7 +77,7 @@ MonoBehaviour:
       Index: 1
       Type: 8
       Channel: baseColor
-    OutputTexture: {fileID: 2800000, guid: bd7a5690280e89e439910cc999c9bff1, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
       Index: 2
       Type: 8
       Channel: normal
-    OutputTexture: {fileID: 2800000, guid: 8f55b14537fe7734b87b660bd6531ee2, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
       Index: 3
       Type: 8
       Channel: specular
-    OutputTexture: {fileID: 2800000, guid: 8c76b69d4b96f8649a6b9fc6dedf2490, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -157,7 +157,7 @@ MonoBehaviour:
       Index: 6
       Type: 8
       Channel: metallic
-    OutputTexture: {fileID: 2800000, guid: 3cdd5be3abd817a4dacfd78b2f464681, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
       Index: 7
       Type: 8
       Channel: height
-    OutputTexture: {fileID: 2800000, guid: 6c11f276655b2fe48bbd49328884bcab, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -189,7 +189,7 @@ MonoBehaviour:
       Index: 8
       Type: 8
       Channel: ambientOcclusion
-    OutputTexture: {fileID: 2800000, guid: 3c5caf7b6573f9a4c8f706f2f734e88b, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -206,39 +206,18 @@ MonoBehaviour:
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
-  OutputMaterial: {fileID: 2100000, guid: 1c045d0be11f80e42854035360b28991, type: 2}
+  OutputMaterial: {fileID: 0}
   DefaultPreset: " <sbspreset pkgurl=\"pkg://stylized_round_stones_in_concrete\"
     label=\"\" >\n  <presetinput identifier=\"$outputsize\" uid=\"2185428075\" type=\"8\"
     value=\"10,10\" />\n </sbspreset>\n"
-  MaterialShader: Universal Render Pipeline/Lit
+  MaterialShader: 
   RenderTextures: 0
   OutputRemaped: 0
-  Presets:
-  - Info:
-      Label: Ivory
-      Description: 
-      URL: pkg://stylized_round_stones_in_concrete
-    PresetIndex: 0
-    PresetValue: 
-    NativePreset: 1
-  - Info:
-      Label: Earth
-      Description: 
-      URL: pkg://stylized_round_stones_in_concrete
-    PresetIndex: 1
-    PresetValue: 
-    NativePreset: 1
-  - Info:
-      Label: Rubble
-      Description: 
-      URL: pkg://stylized_round_stones_in_concrete
-    PresetIndex: 2
-    PresetValue: 
-    NativePreset: 1
+  Presets: []
   references:
     version: 2
     RefIds:
-    - rid: 8435708450743255096
+    - rid: 1430321862873186360
       type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 0
@@ -257,7 +236,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255097
+    - rid: 1430321862873186361
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 1
@@ -279,7 +258,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255098
+    - rid: 1430321862873186362
       type: {class: SubstanceInputFloat3, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 2
@@ -299,7 +278,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255099
+    - rid: 1430321862873186363
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 3
@@ -319,7 +298,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255100
+    - rid: 1430321862873186364
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 4
@@ -339,7 +318,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255101
+    - rid: 1430321862873186365
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 5
@@ -359,7 +338,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255102
+    - rid: 1430321862873186366
       type: {class: SubstanceInputFloat3, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 6
@@ -379,7 +358,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255103
+    - rid: 1430321862873186367
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 7
@@ -399,7 +378,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255104
+    - rid: 1430321862873186368
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 8
@@ -419,7 +398,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255105
+    - rid: 1430321862873186369
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 9
@@ -439,7 +418,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255106
+    - rid: 1430321862873186370
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 10
@@ -459,7 +438,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255107
+    - rid: 1430321862873186371
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 11
@@ -479,7 +458,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255108
+    - rid: 1430321862873186372
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 12
@@ -499,7 +478,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255109
+    - rid: 1430321862873186373
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 13
@@ -519,7 +498,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255110
+    - rid: 1430321862873186374
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 14
@@ -541,7 +520,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255111
+    - rid: 1430321862873186375
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 15
@@ -563,7 +542,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255112
+    - rid: 1430321862873186376
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 16
@@ -585,7 +564,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255113
+    - rid: 1430321862873186377
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 17
@@ -607,7 +586,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255114
+    - rid: 1430321862873186378
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 18
@@ -629,7 +608,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255115
+    - rid: 1430321862873186379
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 19
@@ -651,7 +630,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255116
+    - rid: 1430321862873186380
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 20
@@ -673,7 +652,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255117
+    - rid: 1430321862873186381
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 21
@@ -695,7 +674,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255118
+    - rid: 1430321862873186382
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 22
@@ -717,7 +696,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255119
+    - rid: 1430321862873186383
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 23
@@ -737,7 +716,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255120
+    - rid: 1430321862873186384
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 24
@@ -757,7 +736,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255121
+    - rid: 1430321862873186385
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 25
@@ -777,7 +756,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255122
+    - rid: 1430321862873186386
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 26
@@ -797,7 +776,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255123
+    - rid: 1430321862873186387
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 27
@@ -817,7 +796,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255124
+    - rid: 1430321862873186388
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 28
@@ -843,7 +822,7 @@ MonoBehaviour:
             Label: DirectX
           - Value: 1
             Label: OpenGL
-    - rid: 8435708450743255125
+    - rid: 1430321862873186389
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 29
@@ -863,7 +842,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255126
+    - rid: 1430321862873186390
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 30
@@ -883,7 +862,7 @@ MonoBehaviour:
           SliderClamp: 1
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8435708450743255127
+    - rid: 1430321862873186391
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 31
