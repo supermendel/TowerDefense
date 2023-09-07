@@ -19,12 +19,9 @@ public class WeaponController : MonoBehaviour
 	void Update()
     {
         shootCD -= Time.deltaTime;
-        if (Input.GetMouseButton(0) && (LevelManager.state == SpawnState.WAITING || LevelManager.state == SpawnState.SPAWNING || LevelManager.state == SpawnState.Counting))
-        {
-            ShootProjectile();
-        }
+        
     }
-    private void ShootProjectile()
+    public void ShootProjectile()
     {
         if (shootCD <= 0)
         {

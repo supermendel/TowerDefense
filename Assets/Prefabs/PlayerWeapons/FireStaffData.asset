@@ -19,3 +19,4 @@ MonoBehaviour:
   weaponLvl: 1
   MaxLevel: 5
   shootSound: {fileID: 0}
+  weaponPrefab: {fileID: 868323751913997778, guid: b8a61096b620e47409bb3e6e2a4242e0, type: 3}

@@ -16,6 +16,7 @@ public class WeaponData : ScriptableObject
 	public int MaxLevel;
 #nullable enable
 	public AudioClip shootSound;
+	public GameObject weaponPrefab;
 
 	
 	public void LevelUp()
