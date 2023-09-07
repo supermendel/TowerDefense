@@ -5,30 +5,44 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    private float horizontal;
-    private float vertical;
-    private CharacterController cC;
+	public WeaponData[] availableWeapons;
+	private WeaponController currentWeapon;
+	public Transform equipPos;
 
-    [Header("Stats")]
-    public int speed;
-    public int rotateSpeed;
+	private CharacterController cC;
+
+	[Header("Stats")]
+	public int speed;
+	public int rotateSpeed;
 	public int sceneIndex;
 
-    public Vector2 rotation;
+	public Vector2 rotation;
+	private int currWeaponIndex = 10;
 
-    void Awake()
-    {
-        cC= gameObject.GetComponent<CharacterController>();
+	void Awake()
+	{
+		cC = gameObject.GetComponent<CharacterController>();
 		sceneIndex = SceneManager.GetActiveScene().buildIndex;
-    }
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update()
+	{
 		if (sceneIndex == 0) return; //In Menu
 		if (LevelManager.state == SpawnState.LevelLoss) return;
-        Movement(); 
-      
+
+		if (Input.GetKeyDown(KeyCode.Alpha1))
+		{
+			EquipWeapon(0);
+		}
+
+		if (Input.GetMouseButton(0) && Playable() && currentWeapon != null)
+		{
+			currentWeapon.ShootProjectile();
+		}
+
+		Movement();
+
 	}
 	private void LateUpdate()
 	{
@@ -37,15 +51,15 @@ public class PlayerController : MonoBehaviour
 		Rotate();
 	}
 	public void Movement()
-    {
-        if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
-        else
-        {
+	{
+		if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
+		else
+		{
 			//horizontal = Input.GetAxis("Horizontal");
 			//vertical = Input.GetAxis("Vertical");
 			if (Input.GetKey(KeyCode.W))
 			{
-                transform.position += transform.forward * speed * Time.deltaTime;
+				transform.position += transform.forward * speed * Time.deltaTime;
 
 			}
 			if (Input.GetKey(KeyCode.S))
@@ -66,14 +80,40 @@ public class PlayerController : MonoBehaviour
 
 			//Vector3 moveTo = new Vector3(vertical, 0, -horizontal);
 			//cC.Move(moveTo * speed * Time.deltaTime);
-		}      
-    }
+		}
+	}
 	public void Rotate()
 	{
-        if(LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
-        rotation.x += Input.GetAxis("Mouse X");
-        //transform.localRotation = Quaternion.Euler(0, rotation.x, 0);
-        Quaternion target = Quaternion.Euler(0, rotation.x, 0);
-        transform.rotation=Quaternion.Slerp(transform.rotation,target,Time.deltaTime*rotateSpeed);
+		if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
+		rotation.x += Input.GetAxis("Mouse X");
+		//transform.localRotation = Quaternion.Euler(0, rotation.x, 0);
+		Quaternion target = Quaternion.Euler(0, rotation.x, 0);
+		transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * rotateSpeed);
+	}
+	private void EquipWeapon(int weaponIndex)
+	{
+		if(currWeaponIndex == weaponIndex) return;	//trying to change the same weapon
+
+		if (weaponIndex >= 0 && weaponIndex < availableWeapons.Length)
+		{
+			if (currentWeapon != null)
+			{ //Disabling previous weapon
+				currentWeapon.gameObject.SetActive(false);
+			}
+			GameObject weaponobject = Instantiate(availableWeapons[weaponIndex].weaponPrefab);
+			Transform equipLocation = equipPos;
+			weaponobject.transform.parent = equipLocation;
+			weaponobject.transform.localPosition = Vector3.zero;
+			//weaponobject.transform.localRotation = Quaternion.identity;
+			currWeaponIndex = weaponIndex;
+
+			currentWeapon = weaponobject.GetComponent<WeaponController>();
+		}
+		else
+			return;
+	}
+	public bool Playable()
+	{
+		return (LevelManager.state == SpawnState.WAITING || LevelManager.state == SpawnState.SPAWNING || LevelManager.state == SpawnState.Counting);
 	}
 }
