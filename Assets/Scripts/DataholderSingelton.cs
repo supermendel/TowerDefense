@@ -13,7 +13,7 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 		{
 			if (instance == null)
 			{
-				Debug.LogError("Game Manager is Null!");
+				Debug.LogError("Level Manager is Null!");
 
 			}
 			return instance;
