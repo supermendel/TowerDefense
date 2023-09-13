@@ -12,6 +12,7 @@ public class WeaponData : ScriptableObject
 
 	public GameObject bulletPrefab;
 	public int weaponLvl = 1;
+	public int id;
 
 	public int MaxLevel;
 #nullable enable

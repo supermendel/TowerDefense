@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89e15635e67ecd41aba3d50b2a60346, type: 3}
+  m_Name: GunData
+  m_EditorClassIdentifier: 
+  weaponName: Gun
+  baseDamage: 10
+  baseFireRate: 1
+  bulletPrefab: {fileID: 6423101869495836584, guid: f921f86cb845a284fb5399be9c2fb283, type: 3}
+  weaponLvl: 1
+  id: 2
+  MaxLevel: 5
+  shootSound: {fileID: 0}
+  weaponPrefab: {fileID: 1509993472861339651, guid: 274b53226fe4dc842b86ea458503a2e4, type: 3}

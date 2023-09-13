@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DataholderSingelton : MonoBehaviour, ISaveable
 {
-	public  WeaponData FireStaffData;
+	
+	public List<WeaponData> Weapons;
 	public  PlayerData PlayerData;
 	private static DataholderSingelton instance;
 	public static DataholderSingelton Instance
@@ -34,11 +35,14 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 	}
 	public void LevelWeapon()
 	{
-		FireStaffData.LevelUp();
+		//FireStaffData.LevelUp();
 	}
 	public void ResetWeaponsStats()
 	{
-		FireStaffData.ResetData();
+		foreach (var weapon in Weapons)
+		{
+			weapon.ResetData();
+		}
 	}
 
 	public void Save()
