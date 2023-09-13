@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-	public WeaponData[] availableWeapons;
+	public List<WeaponData> availableWeapons;
 	private WeaponController currentWeapon;
 	public Transform equipPos;
 
@@ -24,6 +24,14 @@ public class PlayerController : MonoBehaviour
 		cC = gameObject.GetComponent<CharacterController>();
 		sceneIndex = SceneManager.GetActiveScene().buildIndex;
 	}
+	private void Start()
+	{
+		availableWeapons = new List<WeaponData>();
+		foreach(var weapon in DataholderSingelton.Instance.Weapons)
+		{
+			availableWeapons.Add(weapon);
+		}
+	}
 
 	// Update is called once per frame
 	void Update()
@@ -34,6 +42,12 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			EquipWeapon(0);
+			currentWeapon.GetData();
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			EquipWeapon(1);
+			currentWeapon.GetData();
 		}
 
 		if (Input.GetMouseButton(0) && Playable() && currentWeapon != null)
@@ -94,7 +108,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if(currWeaponIndex == weaponIndex) return;	//trying to change the same weapon
 
-		if (weaponIndex >= 0 && weaponIndex < availableWeapons.Length)
+		if (weaponIndex >= 0 && weaponIndex < availableWeapons.Count)
 		{
 			if (currentWeapon != null)
 			{ //Disabling previous weapon
@@ -115,5 +129,9 @@ public class PlayerController : MonoBehaviour
 	public bool Playable()
 	{
 		return (LevelManager.state == SpawnState.WAITING || LevelManager.state == SpawnState.SPAWNING || LevelManager.state == SpawnState.Counting);
+	}
+	public void GetWeapons()
+	{
+
 	}
 }
