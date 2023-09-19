@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 	public GameObject player;
+	public GameObject upgradeMenu;
 	public float rotateSpeed;
 	private AudioSource audioSource;
 	private Vector2 rotation;
@@ -24,6 +25,7 @@ public class MenuManager : MonoBehaviour
 		{			
 			RotatePlayer();		
 		}
+		
 	}
 
 	public void OnStartClicked()
@@ -53,5 +55,6 @@ public class MenuManager : MonoBehaviour
 		audioSource.Stop();
 		isHeldDown = false;
 	}
+	
 
 }

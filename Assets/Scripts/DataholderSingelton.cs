@@ -20,6 +20,7 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 			return instance;
 		}
 	}
+	
 	private void Awake()
 	{
 		if (instance != null && instance != this)
@@ -28,14 +29,18 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 		}
 		instance = this;
 		DontDestroyOnLoad(this.gameObject);
+		
 	}
-	private void Start()
+
+	public void LevelWeapon(int id)
 	{
-		ResetWeaponsStats();
-	}
-	public void LevelWeapon()
-	{
-		//FireStaffData.LevelUp();
+		foreach(var weapon in Weapons)
+		{
+			if (weapon.id == id)
+			{
+				weapon.LevelUp();
+			}
+		}
 	}
 	public void ResetWeaponsStats()
 	{
