@@ -29,7 +29,7 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 		}
 		instance = this;
 		DontDestroyOnLoad(this.gameObject);
-		
+		ResetWeaponsStats();
 	}
 
 	public void LevelWeapon(int id)
