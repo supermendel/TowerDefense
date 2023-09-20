@@ -7,10 +7,12 @@ public class CameraManager : MonoBehaviour
 {
 	[SerializeField] private CinemachineVirtualCamera followCamera;
 	[SerializeField] private CinemachineVirtualCamera buildingCamera;
+   
 	void Start()
     {
 		SwitchCamera();
         LockCursor();
+        
 	}
 
     // Update is called once per frame

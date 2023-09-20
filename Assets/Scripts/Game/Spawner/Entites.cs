@@ -26,6 +26,8 @@ public class Entites : MonoBehaviour, IHealth
 	public bool isSplined;
 
 	public Image healthBar;
+#nullable enable
+	public Transform spawnPos;
 
 #nullable enable
 	public SplineAnimate splineScript;
@@ -80,6 +82,7 @@ public class Entites : MonoBehaviour, IHealth
 
 	private void Update()
 	{
+		
 		ShowHealthBar();
 		if (isSplined)
 		{
@@ -226,5 +229,5 @@ public class Entites : MonoBehaviour, IHealth
 		}
 		else { hpCanvas.enabled = false; }
 	}
-
+	
 }
