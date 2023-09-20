@@ -35,10 +35,12 @@ public class CameraManager : MonoBehaviour
     }
     public void LockCursor()
     {
-        //if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelLoss) 
-        Cursor.lockState = CursorLockMode.Confined;
-        //else
-        //    Cursor.lockState = CursorLockMode.Locked;
+        if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelLoss)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        else
+            Cursor.lockState = CursorLockMode.Locked;
     }
     
 }

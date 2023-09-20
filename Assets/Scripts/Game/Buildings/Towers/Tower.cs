@@ -79,7 +79,7 @@ public class Tower : MonoBehaviour,IHealth
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Enemy")
-		{
+	{
 			entities.Add(other.GetComponent<Entites>());
 
 		}

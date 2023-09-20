@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour
 		availableWeapons = new List<WeaponData>();
 		foreach(var weapon in DataholderSingelton.Instance.Weapons)
 		{
-			if(weapon == null) continue;
-			else
 			availableWeapons.Add(weapon);
 		}
 	}
@@ -71,7 +69,8 @@ public class PlayerController : MonoBehaviour
 		if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
 		else
 		{
-			
+			//horizontal = Input.GetAxis("Horizontal");
+			//vertical = Input.GetAxis("Vertical");
 			if (Input.GetKey(KeyCode.W))
 			{
 				transform.position += transform.forward * speed * Time.deltaTime;
@@ -92,7 +91,9 @@ public class PlayerController : MonoBehaviour
 				transform.position += transform.right * speed * Time.deltaTime;
 
 			}
-			
+
+			//Vector3 moveTo = new Vector3(vertical, 0, -horizontal);
+			//cC.Move(moveTo * speed * Time.deltaTime);
 		}
 	}
 	public void Rotate()
@@ -110,14 +111,14 @@ public class PlayerController : MonoBehaviour
 		if (weaponIndex >= 0 && weaponIndex < availableWeapons.Count)
 		{
 			if (currentWeapon != null)
-			{ 
-				Destroy(currentWeapon.gameObject);
+			{ //Disabling previous weapon
+				currentWeapon.gameObject.SetActive(false);
 			}
 			GameObject weaponobject = Instantiate(availableWeapons[weaponIndex].weaponPrefab);
 			Transform equipLocation = equipPos;
 			weaponobject.transform.parent = equipLocation;
 			weaponobject.transform.localPosition = Vector3.zero;
-			//weaponobject.transform.localRotation = Quaternion.identity;
+			weaponobject.transform.localRotation = Quaternion.identity;
 			currWeaponIndex = weaponIndex;
 
 			currentWeapon = weaponobject.GetComponent<WeaponController>();
