@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 		availableWeapons = new List<WeaponData>();
 		foreach(var weapon in DataholderSingelton.Instance.Weapons)
 		{
+			if(weapon == null) continue;
+			else
 			availableWeapons.Add(weapon);
 		}
 	}
@@ -112,7 +114,8 @@ public class PlayerController : MonoBehaviour
 		{
 			if (currentWeapon != null)
 			{ //Disabling previous weapon
-				currentWeapon.gameObject.SetActive(false);
+				//currentWeapon.gameObject.SetActive(false);
+				Destroy(currentWeapon.gameObject);
 			}
 			GameObject weaponobject = Instantiate(availableWeapons[weaponIndex].weaponPrefab);
 			Transform equipLocation = equipPos;
