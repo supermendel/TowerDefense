@@ -71,8 +71,7 @@ public class PlayerController : MonoBehaviour
 		if (LevelManager.state == SpawnState.Building || LevelManager.state == SpawnState.LevelWon) return;
 		else
 		{
-			//horizontal = Input.GetAxis("Horizontal");
-			//vertical = Input.GetAxis("Vertical");
+			
 			if (Input.GetKey(KeyCode.W))
 			{
 				transform.position += transform.forward * speed * Time.deltaTime;
@@ -93,9 +92,7 @@ public class PlayerController : MonoBehaviour
 				transform.position += transform.right * speed * Time.deltaTime;
 
 			}
-
-			//Vector3 moveTo = new Vector3(vertical, 0, -horizontal);
-			//cC.Move(moveTo * speed * Time.deltaTime);
+			
 		}
 	}
 	public void Rotate()
@@ -113,8 +110,7 @@ public class PlayerController : MonoBehaviour
 		if (weaponIndex >= 0 && weaponIndex < availableWeapons.Count)
 		{
 			if (currentWeapon != null)
-			{ //Disabling previous weapon
-				//currentWeapon.gameObject.SetActive(false);
+			{ 
 				Destroy(currentWeapon.gameObject);
 			}
 			GameObject weaponobject = Instantiate(availableWeapons[weaponIndex].weaponPrefab);

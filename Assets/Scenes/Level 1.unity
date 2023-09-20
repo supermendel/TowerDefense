@@ -1577,9 +1577,9 @@ MonoBehaviour:
   - SplinedEnemies:
     - {fileID: 2004261157458473349, guid: c33c6b370eb25e141baa24505e0a6e99, type: 3}
     - {fileID: 2004261157458473349, guid: c33c6b370eb25e141baa24505e0a6e99, type: 3}
-    - {fileID: 3143264339647658389, guid: 9713acea9666b274bb3c1a37cbfcea91, type: 3}
-    - {fileID: 3143264339647658389, guid: 9713acea9666b274bb3c1a37cbfcea91, type: 3}
-    - {fileID: 2004261157458473349, guid: c33c6b370eb25e141baa24505e0a6e99, type: 3}
+    - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
+    - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
+    - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     delay: 1
   - SplinedEnemies: []
     delay: 1
@@ -3323,31 +3323,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.47
+      value: -24.26001
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.73
+      value: 4.1000123
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.01
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.97404575
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: 0.22352697
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: -0.03474309
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5
+      value: 0.007972949
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
