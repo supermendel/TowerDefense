@@ -273,6 +273,19 @@ MonoBehaviour:
   isSplined: 1
   healthBar: {fileID: 7743011314441193903}
   spawnPos: {fileID: 5274140726922323519}
+  spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
   splineScript: {fileID: 0}
 --- !u!114 &8429236999549364894
 MonoBehaviour:

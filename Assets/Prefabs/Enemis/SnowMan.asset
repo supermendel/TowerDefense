@@ -15,6 +15,8 @@ MonoBehaviour:
   enemyName: Tirion
   health: 60
   attackDamage: 10
-  timeToComplete: 40
+  timeToComplete: 45
   coinsAmount: 35
+  attackRate: 0
+  speed: 0
   model: {fileID: 5021617788933747501, guid: 7554e5e08a1755e42a58e0389cb7ae0d, type: 3}

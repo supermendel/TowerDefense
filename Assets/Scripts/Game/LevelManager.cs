@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour
 	}
 	void Start()
 	{
-		coins = 0;
+		coins = 500;
 		
 		state = SpawnState.Building;
 	}

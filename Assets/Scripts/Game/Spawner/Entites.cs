@@ -29,6 +29,7 @@ public class Entites : MonoBehaviour, IHealth
 #nullable enable
 	public Transform spawnPos;
 
+	public Spline spline;
 #nullable enable
 	public SplineAnimate splineScript;
 #nullable enable
@@ -44,7 +45,7 @@ public class Entites : MonoBehaviour, IHealth
 	private bool arrivedTower;
 	private void Awake()
 	{
-
+		
 		if (isSplined)
 		{
 			splineScript = GetComponent<SplineAnimate>();
@@ -57,6 +58,7 @@ public class Entites : MonoBehaviour, IHealth
 	}
 	private void Start()
 	{
+		//spline = splineScript.splineContainer.GetComponent<Spline>();
 		arrivedTower = false;
 
 		Name = enemyData.enemyName;
@@ -100,7 +102,7 @@ public class Entites : MonoBehaviour, IHealth
 			}
 			KillTowerEnemies();
 		}
-
+		
 	}
 
 
