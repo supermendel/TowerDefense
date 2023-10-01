@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class TowerPlacement : MonoBehaviour
 	[SerializeField] float placementRadius = 1.0f;
 	private GameObject currentPlactingTower;
 
+	private GameObject towerPreview;
+	private GameObject towerPreviewInstance;
 	private RaycastHit hitinfo;
 	private Vector3 currentPLacementPos;
 	private GameObject objectTOBuild;
@@ -42,13 +45,14 @@ public class TowerPlacement : MonoBehaviour
 			currentPLacementPos = toPlace;
 		}
 		this.hitinfo = hitinfo;
-
+		UpdatePreviewLocation();
 
 		if (Input.GetMouseButtonDown(0) && CheckPlacemanet())
 		{
 			PlaceTower();
+			
 		}
-
+		
 		HideShop();
 		ForceClose();
 	}
@@ -67,14 +71,15 @@ public class TowerPlacement : MonoBehaviour
 		Gizmos.color = CheckPlacemanet() ? Color.green : Color.red;
 		Gizmos.DrawSphere(currentPLacementPos, placementRadius);
 	}
-	public  void SetTowerToPlace(GameObject gameObject)
-	{		
-			objectTOBuild = gameObject;	
+	public void SetTowerToPlace(GameObject gameObject, GameObject towerToPreview)
+	{
+		towerPreview = towerToPreview;
+		objectTOBuild = gameObject;
 	}
 
 	public void HideShop()
 	{
-		if(objectTOBuild != null)
+		if (objectTOBuild != null)
 		{
 			TowerShop.Instance.shopPanel.SetActive(false);
 		}
@@ -82,19 +87,43 @@ public class TowerPlacement : MonoBehaviour
 
 	public void ForceClose()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if(objectTOBuild != null)
+			if (objectTOBuild != null)
 			{
 				objectTOBuild = null;
-					return;
+				return;
 			}
 
-			if(TowerShop.Instance.shopPanel.activeSelf == true)
+			if (TowerShop.Instance.shopPanel.activeSelf == true)
 			{
 				TowerShop.Instance.shopPanel.SetActive(false);
 				return;
 			}
 		}
 	}
+	private void DeletePreview()
+	{
+		if(towerPreview != null)
+		{
+			Destroy(towerPreview.gameObject);
+			towerPreview = null;
+		}
+		
+	}
+	private void UpdatePreviewLocation()
+	{
+		if(towerPreview != null)
+		{
+			if(towerPreviewInstance == null)
+			{
+				towerPreviewInstance = Instantiate(towerPreview,currentPLacementPos,Quaternion.identity);
+			}
+			else
+			{
+				towerPreviewInstance.transform.position = hitinfo.point;
+			}
+		}
+	}
 }
+

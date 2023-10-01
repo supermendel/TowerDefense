@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ButtonInfo : MonoBehaviour
 {
-
+	public GameObject towerModel;
 	public GameObject towerToSpawn;
 	public TMP_Text costText;
 
@@ -19,7 +19,7 @@ public class ButtonInfo : MonoBehaviour
 
 	public void SetupButton()
 	{
-		this.GetComponent<Button>().onClick.AddListener(() => LevelManager.Instance.GetComponent<TowerPlacement>().SetTowerToPlace(towerToSpawn) );
+		this.GetComponent<Button>().onClick.AddListener(() => LevelManager.Instance.GetComponent<TowerPlacement>().SetTowerToPlace(towerToSpawn,towerModel) );
 	}
 
 	private void Update()
