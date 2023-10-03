@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1126699369995135919}
   - component: {fileID: 6536271246666809146}
   - component: {fileID: -8663490664648553436}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: FireTowerModel
   m_TagString: CantPlace
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2963480567536144843}
   - component: {fileID: 7888538051775757147}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 2891479453310574596}
   - component: {fileID: 6452499426651798960}
   - component: {fileID: 7470924417652648805}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 3385341350917948763}
   - component: {fileID: 2952850736716801691}
   - component: {fileID: 3365795300893931504}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -92,6 +92,7 @@ public class TowerPlacement : MonoBehaviour
 			if (objectTOBuild != null)
 			{
 				objectTOBuild = null;
+				
 				return;
 			}
 
@@ -103,13 +104,8 @@ public class TowerPlacement : MonoBehaviour
 		}
 	}
 	private void DeletePreview()
-	{
-		if(towerPreview != null)
-		{
-			Destroy(towerPreview.gameObject);
-			towerPreview = null;
-		}
-		
+	{	
+			towerPreview = null;	
 	}
 	private void UpdatePreviewLocation()
 	{
