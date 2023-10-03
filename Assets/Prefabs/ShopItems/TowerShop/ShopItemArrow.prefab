@@ -316,6 +316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed03d5095981e64ba419c9b33aae9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerModel: {fileID: 3352407203039817024, guid: a74d2b3d7a47add42b1617cf417a95d0, type: 3}
   towerToSpawn: {fileID: 3352407203039817024, guid: 688b9d63cbef9914c821562da847c3c4, type: 3}
-  cost: 50
   costText: {fileID: 899403178889808449}

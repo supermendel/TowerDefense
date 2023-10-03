@@ -50,9 +50,9 @@ public class TowerPlacement : MonoBehaviour
 		if (Input.GetMouseButtonDown(0) && CheckPlacemanet())
 		{
 			PlaceTower();
-			
+
 		}
-		
+
 		HideShop();
 		ForceClose();
 	}
@@ -92,9 +92,10 @@ public class TowerPlacement : MonoBehaviour
 			if (objectTOBuild != null)
 			{
 				objectTOBuild = null;
-				
+
 				return;
 			}
+			DeletePreview();
 
 			if (TowerShop.Instance.shopPanel.activeSelf == true)
 			{
@@ -104,16 +105,21 @@ public class TowerPlacement : MonoBehaviour
 		}
 	}
 	private void DeletePreview()
-	{	
-			towerPreview = null;	
+	{
+		if (towerPreviewInstance != null)
+		{
+			Destroy(towerPreviewInstance);
+			towerPreviewInstance = null;
+		}
+
 	}
 	private void UpdatePreviewLocation()
 	{
-		if(towerPreview != null)
+		if (towerPreview != null)
 		{
-			if(towerPreviewInstance == null)
+			if (towerPreviewInstance == null)
 			{
-				towerPreviewInstance = Instantiate(towerPreview,currentPLacementPos,Quaternion.identity);
+				towerPreviewInstance = Instantiate(towerPreview, currentPLacementPos, Quaternion.identity);
 			}
 			else
 			{
