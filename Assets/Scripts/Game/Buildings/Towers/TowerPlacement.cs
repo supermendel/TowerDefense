@@ -29,7 +29,8 @@ public class TowerPlacement : MonoBehaviour
 		else
 		{
 			objectTOBuild = null;
-			return;
+            DeletePreview();
+            return;
 		}
 	}
 
@@ -92,12 +93,12 @@ public class TowerPlacement : MonoBehaviour
 			if (objectTOBuild != null)
 			{
 				objectTOBuild = null;
-
-				return;
+                DeletePreview();
+                return;
 			}
-			DeletePreview();
+            
 
-			if (TowerShop.Instance.shopPanel.activeSelf == true)
+            if (TowerShop.Instance.shopPanel.activeSelf == true)
 			{
 				TowerShop.Instance.shopPanel.SetActive(false);
 				return;
@@ -106,7 +107,9 @@ public class TowerPlacement : MonoBehaviour
 	}
 	private void DeletePreview()
 	{
-		if (towerPreviewInstance != null)
+		towerPreview = null;
+
+        if (towerPreviewInstance != null)
 		{
 			Destroy(towerPreviewInstance);
 			towerPreviewInstance = null;
