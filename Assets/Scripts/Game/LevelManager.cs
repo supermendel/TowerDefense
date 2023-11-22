@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour
 	{
 		instance = this;
 		currentScene = SceneManager.GetActiveScene().buildIndex;
-		WaveManager.LevelComplete += ChangeState;
+		WaveManager.LevelComplete += ChangeStateWon;
 		Garrison.GarrisonDestroyed += ShowLoseCanvas;
 		
 	}
@@ -97,7 +97,7 @@ public class LevelManager : MonoBehaviour
 		//Moving Camera
 		state = SpawnState.Counting;
 	}
-	public void ChangeState()
+	public void ChangeStateWon()
 	{
 		state = SpawnState.LevelWon;
 	}
