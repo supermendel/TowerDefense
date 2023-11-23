@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DataholderSingelton : MonoBehaviour, ISaveable
 {
-	
+
 	public List<WeaponData> Weapons;
-	public  PlayerData PlayerData;
+	public PlayerData PlayerData;
+	[SerializeField] private  LevelsCompletionData levelsCompletionData;
 	private static DataholderSingelton instance;
 	public static DataholderSingelton Instance
 	{
@@ -30,9 +32,10 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 		instance = this;
 		DontDestroyOnLoad(this.gameObject);
 		ResetWeaponsStats();
-	}
-
-	public void LevelWeapon(int id)
+		
+    }
+   
+    public void LevelWeapon(int id)
 	{
 		foreach(var weapon in Weapons)
 		{
@@ -59,4 +62,5 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 	{
 		throw new System.NotImplementedException();
 	}
+	
 }

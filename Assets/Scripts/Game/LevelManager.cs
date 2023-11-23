@@ -20,7 +20,7 @@ public class LevelManager : MonoBehaviour
 	public static SpawnState state;
 	public static int coins;
 	public static bool GameOn = true;
-
+	public LevelData levelData;
 
 
 	private  int currentScene;
@@ -43,7 +43,9 @@ public class LevelManager : MonoBehaviour
 		instance = this;
 		currentScene = SceneManager.GetActiveScene().buildIndex;
 		WaveManager.LevelComplete += ChangeStateWon;
-		Garrison.GarrisonDestroyed += ShowLoseCanvas;
+        WaveManager.LevelComplete += ChangeDataWin;
+
+        Garrison.GarrisonDestroyed += ShowLoseCanvas;
 		
 	}
 	void Start()
@@ -112,6 +114,10 @@ public class LevelManager : MonoBehaviour
 	public void MenuClicked()
 	{
 		SceneManager.LoadScene(0);
+	}
+	public void ChangeDataWin()
+	{
+		levelData.isComplete = true;
 	}
 
 }
