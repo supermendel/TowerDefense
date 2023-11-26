@@ -12,6 +12,7 @@ public class LevelContentManager : MonoBehaviour
     private void Start()
     {
         Debug.Log(levels.Count);
+        CheckAviablity();
     }
     public void GetButtons()
     {
@@ -22,11 +23,11 @@ public class LevelContentManager : MonoBehaviour
     }
     public void CheckAviablity()
     {
-        for (int i = 1; i < levels.Count; i++)
+        for (int i = 0; i < levels.Count-1; i++)
         {
             if (levels[i].GetComponent<LevelsButton>().levelData.isComplete != true)
             {
-                //check if buttong need to be interacble
+                levels[i+1].GetComponent<LevelsButton>().DisableButton();
             }
             
         }
