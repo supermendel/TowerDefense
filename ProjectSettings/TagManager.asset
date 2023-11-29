@@ -8,6 +8,7 @@ TagManager:
   - Spline
   - CanPlace
   - CantPlace
+  - DontDestroy
   layers:
   - Default
   - TransparentFX
