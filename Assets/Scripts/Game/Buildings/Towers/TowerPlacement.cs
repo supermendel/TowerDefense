@@ -119,7 +119,6 @@ public class TowerPlacement : MonoBehaviour
 			Destroy(towerPreviewInstance);
 			towerPreviewInstance = null;
             objectRenderer = null;
-			originalColor = null;
 
         }
 
