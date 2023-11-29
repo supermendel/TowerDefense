@@ -25,6 +25,7 @@ public class TowerPreview : MonoBehaviour
     {
         foreach(Renderer renderer in childRenderers)
         {
+            if(renderer == null) continue;
             renderer.material.color = color;
         }
     }
@@ -32,6 +33,7 @@ public class TowerPreview : MonoBehaviour
     {
         for(int i = 0;i < childRenderers.Length; i++)
         {
+            if (childRenderers[i] == null) continue;
             childRenderers[i].material.color = originalColors[i];
         }
     }
