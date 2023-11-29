@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2784541324772438189}
   - component: {fileID: 2119819311553275641}
   - component: {fileID: 8374377463187300991}
+  - component: {fileID: 3723437877251113402}
   m_Layer: 2
   m_Name: IceTowerModel
   m_TagString: CantPlace
@@ -135,6 +136,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3723437877251113402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364095212003220334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0555991d795ac42b8bbcc3c741c456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unavaiableColor: {r: 0.8113208, g: 0.3023318, b: 0.3023318, a: 1}
+  childRenderers: []
+  originalColors: []
 --- !u!1 &3370795469964817612
 GameObject:
   m_ObjectHideFlags: 0

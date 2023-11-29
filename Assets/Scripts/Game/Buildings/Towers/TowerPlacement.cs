@@ -18,9 +18,11 @@ public class TowerPlacement : MonoBehaviour
 	private Vector3 currentPLacementPos;
 	private GameObject objectTOBuild;
 
-	private Color unavaibleColor = Color.red;
-	private Renderer objectRenderer;
-	private Color originalColor;
+	private TowerPreview towerPreviewScript;
+
+	//private Color unavaibleColor = Color.red;
+	//private Renderer objectRenderer;
+	//private Color originalColor;
 
 	private void PlaceTower()
 	{
@@ -51,7 +53,10 @@ public class TowerPlacement : MonoBehaviour
 		}
 		this.hitinfo = hitinfo;
 		UpdatePreviewLocation();
-		ChangeColorUnAvaible();
+		if (towerPreviewInstance != null)
+		{
+			ChangeColorUnAvaible();
+		}
 
 		if (Input.GetMouseButtonDown(0) && CheckPlacemanet())
 		{
@@ -118,7 +123,7 @@ public class TowerPlacement : MonoBehaviour
 		{
 			Destroy(towerPreviewInstance);
 			towerPreviewInstance = null;
-            objectRenderer = null;
+            
 
         }
 
@@ -130,8 +135,8 @@ public class TowerPlacement : MonoBehaviour
 			if (towerPreviewInstance == null)
 			{
 				towerPreviewInstance = Instantiate(towerPreview, currentPLacementPos, Quaternion.identity);
-				objectRenderer = towerPreviewInstance.GetComponent<Renderer>();
-				originalColor = objectRenderer.material.color;
+				towerPreviewScript = towerPreviewInstance.GetComponent<TowerPreview>();
+				
 			}
 			else
 			{
@@ -142,12 +147,13 @@ public class TowerPlacement : MonoBehaviour
 
 	private void ChangeColorUnAvaible()
 	{
-		if (CheckPlacemanet())
+		if (!CheckPlacemanet())
 		{
-			objectRenderer.material.color = originalColor ;
+			towerPreviewScript.ChangeColorBad(towerPreviewScript.unavaiableColor);
+			
 		}
 		else
-			objectRenderer.material.color = unavaibleColor;
-	}
+            towerPreviewScript.ReturnColor();
+    }
 }
 
