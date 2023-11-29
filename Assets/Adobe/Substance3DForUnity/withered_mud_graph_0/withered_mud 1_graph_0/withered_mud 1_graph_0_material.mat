@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: withered_mud_graph_0_material
+  m_Name: withered_mud 1_graph_0_material
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -29,11 +29,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 4255b969cdd1daa4d8a0c4bdef04d185, type: 3}
+        m_Texture: {fileID: 2800000, guid: e88efbef2a1ac404c955298140f5a62a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: ce573b17aa97fa94aae1c38f2b7bc7b9, type: 3}
+        m_Texture: {fileID: 2800000, guid: bff937e6e1bec3d47b0e0409a05971d4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -53,23 +53,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4255b969cdd1daa4d8a0c4bdef04d185, type: 3}
+        m_Texture: {fileID: 2800000, guid: e88efbef2a1ac404c955298140f5a62a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 21fb4e527204a264f9f6209dccf01595, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6ad4048029a6e184c8f86b6811454f70, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 423d088b05b79f040aa48a0785958443, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2efbce1dff704ef41a29a6c3dd4c1f76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: bdaaf59c56d95d845add9ba558db92ff, type: 3}
+        m_Texture: {fileID: 2800000, guid: b10d0aaa28a153e43b2895ed31c7d5ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: c82b164b9f7d7d242859970e58fa4245, type: 3}
+        m_Texture: {fileID: 2800000, guid: b77877e3180a43945ac7904ac639c012, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -122,7 +122,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &7066738003961131455
+--- !u!114 &5811566194351455652
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
