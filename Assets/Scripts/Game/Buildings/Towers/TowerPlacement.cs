@@ -18,6 +18,10 @@ public class TowerPlacement : MonoBehaviour
 	private Vector3 currentPLacementPos;
 	private GameObject objectTOBuild;
 
+	private Color unavaibleColor = Color.red;
+	private Renderer objectRenderer;
+	private Color originalColor;
+
 	private void PlaceTower()
 	{
 		if (objectTOBuild == null) { return; }
@@ -47,6 +51,7 @@ public class TowerPlacement : MonoBehaviour
 		}
 		this.hitinfo = hitinfo;
 		UpdatePreviewLocation();
+		ChangeColorUnAvaible();
 
 		if (Input.GetMouseButtonDown(0) && CheckPlacemanet())
 		{
@@ -113,7 +118,10 @@ public class TowerPlacement : MonoBehaviour
 		{
 			Destroy(towerPreviewInstance);
 			towerPreviewInstance = null;
-		}
+            objectRenderer = null;
+			originalColor = null;
+
+        }
 
 	}
 	private void UpdatePreviewLocation()
@@ -123,12 +131,24 @@ public class TowerPlacement : MonoBehaviour
 			if (towerPreviewInstance == null)
 			{
 				towerPreviewInstance = Instantiate(towerPreview, currentPLacementPos, Quaternion.identity);
+				objectRenderer = towerPreviewInstance.GetComponent<Renderer>();
+				originalColor = objectRenderer.material.color;
 			}
 			else
 			{
 				towerPreviewInstance.transform.position = hitinfo.point;
 			}
 		}
+	}
+
+	private void ChangeColorUnAvaible()
+	{
+		if (CheckPlacemanet())
+		{
+			objectRenderer.material.color = originalColor ;
+		}
+		else
+			objectRenderer.material.color = unavaibleColor;
 	}
 }
 
