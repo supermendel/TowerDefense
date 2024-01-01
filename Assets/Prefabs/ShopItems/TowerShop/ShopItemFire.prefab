@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 142962574303684674, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -420322563, guid: dd22c4a5993b1f545ad56ed462b0e68f, type: 3}
+      objectReference: {fileID: 21300000, guid: 0f367e728352e6640b2137fd73b369e7, type: 3}
     - target: {fileID: 1094026105173254060, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: cost
       value: 85
