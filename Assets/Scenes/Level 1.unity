@@ -1809,13 +1809,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - SplinedEnemies:
-    - {fileID: 2004261157458473349, guid: c33c6b370eb25e141baa24505e0a6e99, type: 3}
-    - {fileID: 2004261157458473349, guid: c33c6b370eb25e141baa24505e0a6e99, type: 3}
+    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
+    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     delay: 1
-  - SplinedEnemies: []
+  - SplinedEnemies:
+    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
+    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
     delay: 1
   timeBetweenWaves: 5
   nonSplineEnemies: {fileID: 5179807741351087800, guid: 093df6b773a38c848bdb50ef1a0c0927, type: 3}
