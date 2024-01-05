@@ -1809,8 +1809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - SplinedEnemies:
-    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
-    - {fileID: 7173184825180797952, guid: b86323c8170e2c54cb7bb2dc3f5354b7, type: 3}
+    - {fileID: 3155486603742519411, guid: af4b38a41fc6c2f4aaa935a500da6ea2, type: 3}
+    - {fileID: 3155486603742519411, guid: af4b38a41fc6c2f4aaa935a500da6ea2, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
