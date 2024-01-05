@@ -1822,7 +1822,7 @@ MonoBehaviour:
   timeBetweenWaves: 5
   nonSplineEnemies: {fileID: 5179807741351087800, guid: 093df6b773a38c848bdb50ef1a0c0927, type: 3}
   count: 2
-  timeEnemySpawner: 5
+  timeEnemySpawner: 15
   pointA: {fileID: 1425477438}
   pointB: {fileID: 1217358618}
 --- !u!1 &1718217405
