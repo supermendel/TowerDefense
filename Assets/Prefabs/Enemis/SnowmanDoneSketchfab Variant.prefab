@@ -139,6 +139,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 984694f0ad823c545b64fdedd86ae197, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 984694f0ad823c545b64fdedd86ae197, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 984694f0ad823c545b64fdedd86ae197, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 984694f0ad823c545b64fdedd86ae197, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -274,6 +286,20 @@ MonoBehaviour:
   hpCanvas: {fileID: 4398851091018623156}
   isSplined: 1
   healthBar: {fileID: 5738606158742068102}
+  spawnPos: {fileID: 0}
+  spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
   splineScript: {fileID: 0}
 --- !u!114 &5208868991733702869
 MonoBehaviour:
@@ -292,7 +318,7 @@ MonoBehaviour:
   m_LoopMode: 0
   m_Method: 0
   m_Duration: 1
-  m_MaxSpeed: 90.6079
+  m_MaxSpeed: 114.96716
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 2

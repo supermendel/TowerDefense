@@ -172,15 +172,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89f18ea53451e54d8684303a65488cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89f18ea53451e54d8684303a65488cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89f18ea53451e54d8684303a65488cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89f18ea53451e54d8684303a65488cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_LoopMode: 0
   m_Method: 0
   m_Duration: 1
-  m_MaxSpeed: 90.6079
+  m_MaxSpeed: 114.96716
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 2
