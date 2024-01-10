@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Weapons/Weapon")]
@@ -18,9 +19,9 @@ public class WeaponData : ScriptableObject
 #nullable enable
 	public AudioClip shootSound;
 	public GameObject weaponPrefab;
+    public List<int> weaponsCost;
 
-	
-	public void LevelUp()
+    public void LevelUp()
 	{
 		if (weaponLvl >= MaxLevel) return;
 		weaponLvl++;

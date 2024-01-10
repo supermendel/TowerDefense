@@ -2993,6 +2993,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 220844591}
     m_Modifications:
+    - target: {fileID: 389780429244358684, guid: 9d18aece04ad0a142a6038535e342a03, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 389780429244358684, guid: 9d18aece04ad0a142a6038535e342a03, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389780429244358684, guid: 9d18aece04ad0a142a6038535e342a03, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389780429244358684, guid: 9d18aece04ad0a142a6038535e342a03, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5597091404522011285, guid: 9d18aece04ad0a142a6038535e342a03, type: 3}
       propertyPath: m_Name
       value: ShopItem2

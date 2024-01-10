@@ -6,12 +6,13 @@ using UnityEngine;
 public class UpgradePanelScript : MonoBehaviour
 {
     [SerializeField] TMP_Text? coinsText;
-    [SerializeField] CoinsData coinsData;
+    public  CoinsData coinsData;
 
     void Start()
     {
         coinsText.text = $"Coins : {coinsData.weaponShopCoins}";
     }
+   
 
    
 }

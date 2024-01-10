@@ -16,8 +16,7 @@ public class LevelManager : MonoBehaviour
 #nullable enable
 	[SerializeField] Canvas lostCanvas;
 	[SerializeField] TMP_Text? coinsText;
-	[SerializeField] int coinsPerWin;
-	public CoinsData coinsData;
+	
 	
 
 	public static SpawnState state;
