@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class MenuManager : MonoBehaviour
 	private Vector2 rotation;
 	public bool isHeldDown;
 	public int plusorminus = 0;
-	public static int Coins = 0;
+	
 	private void Start()
 	{
 		audioSource = GetComponent<AudioSource>();
@@ -26,6 +27,7 @@ public class MenuManager : MonoBehaviour
 		{			
 			RotatePlayer();		
 		}
+		
 		
 	}
 

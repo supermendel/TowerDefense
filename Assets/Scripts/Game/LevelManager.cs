@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] Canvas lostCanvas;
 	[SerializeField] TMP_Text? coinsText;
 	[SerializeField] int coinsPerWin;
+	public CoinsData coinsData;
 	
 
 	public static SpawnState state;
@@ -120,7 +121,6 @@ public class LevelManager : MonoBehaviour
 	public void ChangeDataWin()
 	{
 		levelData.isComplete = true;
-		MenuManager.Coins += coinsPerWin;
 	}
 
 }

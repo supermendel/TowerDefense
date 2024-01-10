@@ -23,9 +23,11 @@ public partial class WaveManager : MonoBehaviour
 	public Transform nonSplineEnemies;
 	public int count;
 	public float timeEnemySpawner;
-	private int enemyCounter;
+    public CoinsData coinsData;
 
-	[SerializeField] private Transform pointA;
+    private int enemyCounter;
+    [SerializeField] int coinsPerWin;
+    [SerializeField] private Transform pointA;
 	[SerializeField] private Transform pointB;
 	private float waveCountDown;
 	private int nextWave = 0;
@@ -108,7 +110,10 @@ public partial class WaveManager : MonoBehaviour
 		{
 			//finished lvl .
 			Debug.Log("Finished lvl");
-			LevelComplete?.Invoke();
+
+           coinsData.weaponShopCoins += coinsPerWin;
+
+            LevelComplete?.Invoke();
 
 		}
 		nextWave++;

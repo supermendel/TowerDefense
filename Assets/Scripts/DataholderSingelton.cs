@@ -16,7 +16,7 @@ public class DataholderSingelton : MonoBehaviour, ISaveable
 		{
 			if (instance == null)
 			{
-				Debug.LogError("Level Manager is Null!");
+				Debug.LogError("Data Manager is Null!");
 
 			}
 			return instance;

@@ -6,15 +6,12 @@ using UnityEngine;
 public class UpgradePanelScript : MonoBehaviour
 {
     [SerializeField] TMP_Text? coinsText;
+    [SerializeField] CoinsData coinsData;
 
     void Start()
     {
-        coinsText.text = $"Coins : {MenuManager.Coins}";
+        coinsText.text = $"Coins : {coinsData.weaponShopCoins}";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+   
 }
