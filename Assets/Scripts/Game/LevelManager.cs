@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class LevelManager : MonoBehaviour
 #nullable enable
 	[SerializeField] Canvas lostCanvas;
 	[SerializeField] TMP_Text? coinsText;
+	[SerializeField] int coinsPerWin;
 	
 
 	public static SpawnState state;
@@ -118,6 +120,7 @@ public class LevelManager : MonoBehaviour
 	public void ChangeDataWin()
 	{
 		levelData.isComplete = true;
+		MenuManager.Coins += coinsPerWin;
 	}
 
 }
