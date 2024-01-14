@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: IceMat
   m_Shader: {fileID: -6465566751694194690, guid: a4c885f692e2e3f4b8b9583d764b6994, type: 3}
-  m_Parent: {fileID: 2100000, guid: 200ad729a776a214b90148555b3ca399, type: 2}
+  m_Parent: {fileID: -876546973899608171, guid: a4c885f692e2e3f4b8b9583d764b6994, type: 3}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -24,9 +24,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _QueueControl: 0
     m_Colors:
-    - _Color: {r: 0.0779192, g: 0.9716981, b: 0.920294, a: 1}
+    - _Color: {r: 0.24056602, g: 1, b: 0.29200587, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &623789439055148995
 MonoBehaviour:
