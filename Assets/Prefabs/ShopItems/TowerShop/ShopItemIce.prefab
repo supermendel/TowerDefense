@@ -23,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 1094026105173254060, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: towerToSpawn
       value: 
-      objectReference: {fileID: 1364095212003220334, guid: e394e2137e2963d46902248f11128543, type: 3}
+      objectReference: {fileID: 621332729206162395, guid: c6163fa6b79016041bdba4ab67c3f4f2, type: 3}
     - target: {fileID: 5107455019629779992, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: m_Name
       value: ShopItemIce
