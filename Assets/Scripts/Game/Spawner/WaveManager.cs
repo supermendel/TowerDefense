@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Lumin;
+using UnityEngine.Rendering;
 using UnityEngine.Splines;
 
 public partial class WaveManager : MonoBehaviour
@@ -20,6 +21,7 @@ public partial class WaveManager : MonoBehaviour
 
 	public Wave[] waves;
 	public float timeBetweenWaves = 5f;
+	
 	public Transform nonSplineEnemies;
 	public int count;
 	public float timeEnemySpawner;
@@ -29,6 +31,7 @@ public partial class WaveManager : MonoBehaviour
     [SerializeField] int coinsPerWin;
     [SerializeField] private Transform pointA;
 	[SerializeField] private Transform pointB;
+	
 	private float waveCountDown;
 	private int nextWave = 0;
 	private float searchCountdown = 1f;
@@ -36,10 +39,11 @@ public partial class WaveManager : MonoBehaviour
 
 	private float towerEnemyCD;
 	public static event Action LevelComplete;
+    public static event Action WaveCoimplete;
 
-	//private SpawnState state = SpawnState.Counting;
+    //private SpawnState state = SpawnState.Counting;
 
-	private void Start()
+    private void Start()
 	{
 		waveCountDown = timeBetweenWaves;
 		towerEnemyCD = timeEnemySpawner;
@@ -66,7 +70,7 @@ public partial class WaveManager : MonoBehaviour
 				return;
 			}
 		}
-
+	
 		if (waveCountDown <= 0)
 		{
 
@@ -105,7 +109,7 @@ public partial class WaveManager : MonoBehaviour
 		Debug.Log("Wave Completed");
 		waveCountDown = timeBetweenWaves;
 		LevelManager.state = SpawnState.Building;
-
+		
 		if (nextWave + 1 > waves.Length - 1)
 		{
 			//finished lvl .
@@ -116,7 +120,8 @@ public partial class WaveManager : MonoBehaviour
             LevelComplete?.Invoke();
 
 		}
-		nextWave++;
+        WaveCoimplete?.Invoke();
+        nextWave++;
 	}
 
 

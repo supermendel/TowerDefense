@@ -19,7 +19,8 @@ public class Tower : MonoBehaviour,IHealth
 	public float arrackRate;
 	public bool canAttack;
 	public Transform projectileSpawnpos;
-	public GameObject? projectilePrefab;
+ #nullable enable
+	public GameObject projectilePrefab;
 	public int attackPower;
 
 	public LineRenderer? beamProjectile;

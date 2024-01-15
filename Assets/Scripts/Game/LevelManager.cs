@@ -15,18 +15,23 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] Canvas? canvas;
 #nullable enable
 	[SerializeField] Canvas lostCanvas;
-	[SerializeField] TMP_Text? coinsText;
-	
-	
+#nullable enable
+    [SerializeField] TMP_Text? coinsText;
+#nullable enable
+	[SerializeField] TMP_Text? countdownText;
+    [SerializeField] float buildingTime;
 
-	public static SpawnState state;
+
+
+    public static SpawnState state;
 	public static int coins;
 	public static bool GameOn = true;
 	public LevelData levelData;
 
 
 	private  int currentScene;
-	private static LevelManager instance;
+    private float currentBuildingTime;
+    private static LevelManager instance;
 	public static LevelManager Instance
 	{
 		get
@@ -39,13 +44,15 @@ public class LevelManager : MonoBehaviour
 			return instance;
 		}
 	}
+    
 
-	private void Awake()
+    private void Awake()
 	{
 		instance = this;
 		currentScene = SceneManager.GetActiveScene().buildIndex;
 		WaveManager.LevelComplete += ChangeStateWon;
         WaveManager.LevelComplete += ChangeDataWin;
+		WaveManager.WaveCoimplete += SetBuildingTime;
 
         Garrison.GarrisonDestroyed += ShowLoseCanvas;
 		
@@ -53,8 +60,9 @@ public class LevelManager : MonoBehaviour
 	void Start()
 	{
 		coins = 500;
-		
-		state = SpawnState.Building;
+        currentBuildingTime = buildingTime;
+
+        state = SpawnState.Building;
 	}
 
 	// Update is called once per frame
@@ -66,21 +74,23 @@ public class LevelManager : MonoBehaviour
 		
 	}
 
-	public void BuildingPhase()
-	{
-		if (state == SpawnState.Building)
-		{
-			//Building stuff
-		}
-	}
 
 	private void UpdateUI()
 	{
 		coinsText.text = coins.ToString();
-		if (state == SpawnState.Building)
+		
+        if (state == SpawnState.Building)
 		{
 			UnHideUi();
-		}
+            currentBuildingTime -= Time.deltaTime;
+            countdownText.text = Math.Round(currentBuildingTime,2).ToString();
+            if(currentBuildingTime <= 0)
+			{
+				currentBuildingTime = 0;
+				ReadyClicked();
+			}
+
+        }
 		else
 		{
 
@@ -90,10 +100,12 @@ public class LevelManager : MonoBehaviour
 	private void HideUi()
 	{
 		canvas.enabled = false;
-	}
+        countdownText.enabled = false;
+    }
 	private void UnHideUi()
 	{
 		canvas.enabled = true;
+		countdownText.enabled = true;
 	}
 
 	public void ReadyClicked()
@@ -105,7 +117,12 @@ public class LevelManager : MonoBehaviour
 	{
 		state = SpawnState.LevelWon;
 	}
-	public void ShowLoseCanvas()
+	public void SetBuildingTime()
+	{
+        currentBuildingTime = buildingTime;
+
+    }
+    public void ShowLoseCanvas()
 	{
 		lostCanvas.GetComponent<Canvas>().enabled = true;
 	}

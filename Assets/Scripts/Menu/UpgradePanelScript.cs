@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UpgradePanelScript : MonoBehaviour
 {
+#nullable enable
     [SerializeField] TMP_Text? coinsText;
     public  CoinsData coinsData;
 

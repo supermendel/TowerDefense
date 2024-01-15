@@ -9,7 +9,8 @@ public class EndLevelPanel : MonoBehaviour
 {
 	private Canvas endGameCanvas;
 	private int sceneId;
-	[SerializeField] GameObject? nextLvlButton;
+#nullable enable
+	[SerializeField] GameObject? nextLvlButton; 
 
 	private void Awake()
 	{
