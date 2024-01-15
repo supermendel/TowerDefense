@@ -30,7 +30,7 @@ public class Garrison : MonoBehaviour, IHealth
 	{
 		currentHealth -= damage;
         UpdateUI();
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
         {
             Health = 0;
 
