@@ -7,6 +7,7 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public bool isComplete;
+    public bool areThereTurretEnemies;
     public int ID;
      
 }

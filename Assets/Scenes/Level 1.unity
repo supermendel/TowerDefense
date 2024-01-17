@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3260556129471042798, guid: 158452df317a07d46adbcb1fee9d3b30, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -212
+      value: -256
       objectReference: {fileID: 0}
     - target: {fileID: 5248570065271282621, guid: 158452df317a07d46adbcb1fee9d3b30, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2153,6 +2153,7 @@ MonoBehaviour:
     delay: 1
   timeBetweenWaves: 5
   nonSplineEnemies: {fileID: 5179807741351087800, guid: 093df6b773a38c848bdb50ef1a0c0927, type: 3}
+  levelData: {fileID: 11400000, guid: d9d97d8c7862c034aa0cad99fb06f890, type: 2}
   count: 2
   timeEnemySpawner: 15
   coinsData: {fileID: 11400000, guid: 6b0c9a763c071004ab4bf2786e9d72f5, type: 2}
@@ -2623,7 +2624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -669, y: -205}
+  m_AnchoredPosition: {x: -669, y: -256}
   m_SizeDelta: {x: 282.78003, y: 75.58093}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1747686391

@@ -23,7 +23,8 @@ public partial class WaveManager : MonoBehaviour
 	public float timeBetweenWaves = 5f;
 	
 	public Transform nonSplineEnemies;
-	public int count;
+    public LevelData levelData;
+    public int count;
 	public float timeEnemySpawner;
     public CoinsData coinsData;
 
@@ -53,11 +54,13 @@ public partial class WaveManager : MonoBehaviour
 				
 		if (LevelManager.state == SpawnState.WAITING)
 		{
-			towerEnemyCD -= Time.deltaTime;
-			if(towerEnemyCD <= 0)
-			{
-				SpawnTowerEnemies();
-				towerEnemyCD = timeEnemySpawner;
+			if (levelData.areThereTurretEnemies) { 
+			    towerEnemyCD -= Time.deltaTime;
+				if (towerEnemyCD <= 0)
+				{
+					SpawnTowerEnemies();
+					towerEnemyCD = timeEnemySpawner;
+				}	
 			}
 			if (!EnemyIsAlive())
 			{
