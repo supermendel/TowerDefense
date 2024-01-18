@@ -15,9 +15,10 @@ MonoBehaviour:
   weaponName: Fire Staff
   baseDamage: 8
   baseFireRate: 1.03
-  bulletPrefab: {fileID: 7907483603896092374, guid: 813506fa1a548cc4ea95e1fc06c6a27b, type: 3}
+  bulletPrefab: {fileID: 4490938630221411753, guid: cb060312dc8129d4bb559a455c8dcba4, type: 3}
   weaponLvl: 1
   id: 1
   MaxLevel: 5
   shootSound: {fileID: 0}
   weaponPrefab: {fileID: 624744730973198021, guid: b8a61096b620e47409bb3e6e2a4242e0, type: 3}
+  weaponsCost: 
