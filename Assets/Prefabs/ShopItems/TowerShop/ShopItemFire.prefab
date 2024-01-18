@@ -19,11 +19,11 @@ PrefabInstance:
     - target: {fileID: 1094026105173254060, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: towerModel
       value: 
-      objectReference: {fileID: 2796985256554849266, guid: 6ca5dbcd3ca599449863daa529121555, type: 3}
+      objectReference: {fileID: 621332729206162395, guid: 68c80db2cbea4bf46990ae9bf45d6d8a, type: 3}
     - target: {fileID: 1094026105173254060, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: towerToSpawn
       value: 
-      objectReference: {fileID: 2796985256554849266, guid: 87adff663ca334a4a82c448db293a828, type: 3}
+      objectReference: {fileID: 621332729206162395, guid: 3e9e160e90838bc4593dfb1227704125, type: 3}
     - target: {fileID: 1094026105173254060, guid: d1f97f4e95b8e194882e59449923076e, type: 3}
       propertyPath: objectToPreview
       value: 
