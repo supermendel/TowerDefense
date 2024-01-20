@@ -123,3 +123,4 @@ MonoBehaviour:
   damage: 0
   splashDamage: 0
   splashRadius: 0
+  vFX: {fileID: 8649103730900180660, guid: 7d04408a4650f544eb0644851dcaf62b, type: 3}

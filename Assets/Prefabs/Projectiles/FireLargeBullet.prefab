@@ -9682,7 +9682,7 @@ Transform:
   m_GameObject: {fileID: 128375235608327672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 128375235559055682}
@@ -14514,6 +14514,7 @@ MonoBehaviour:
   damage: 0
   splashDamage: 1
   splashRadius: 3
+  vFX: {fileID: 7554899051286264847, guid: fd882bb37a7b5f246930b288f28a9157, type: 3}
 --- !u!135 &224323185602020810
 SphereCollider:
   m_ObjectHideFlags: 0

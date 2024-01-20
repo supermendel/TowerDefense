@@ -11,7 +11,8 @@ public class Projectile : MonoBehaviour
 
 	private Vector3 oldPos;
 	private float distanceTraveled = 0;
-	
+#nullable enable
+	[SerializeField] Transform vFX;
 	private Vector3 shootDir;
 
 
@@ -24,10 +25,12 @@ public class Projectile : MonoBehaviour
 	{				
 		transform.position += shootDir * Time.deltaTime * 50f;
 		CalculateDistance();
+		transform.LookAt(shootDir);
 		if(distanceTraveled >= 15)
 		{
 			Destroy(this.gameObject);
 		}
+
 	}
 	private void OnTriggerEnter(Collider other)
 	{
@@ -43,7 +46,7 @@ public class Projectile : MonoBehaviour
 			{
 				enemy.TakeDamage(damage);
 			}
-
+			Instantiate(vFX, this.transform.position, Quaternion.identity);
 			Destroy(this.gameObject);
 		}
 	}
@@ -73,5 +76,5 @@ public class Projectile : MonoBehaviour
 		oldPos = transform.position;
 	}
 	
-
+	
 }
