@@ -43,6 +43,8 @@ public class Entites : MonoBehaviour, IHealth
 	private float attackCd;
 	private Rigidbody rb;
 	private bool arrivedTower;
+	private AudioSource audioSource;
+	private AudioClip audioClip;
 	private void Awake()
 	{
 		
@@ -60,7 +62,7 @@ public class Entites : MonoBehaviour, IHealth
 	{
 		//spline = splineScript.splineContainer.GetComponent<Spline>();
 		arrivedTower = false;
-
+		audioSource = GetComponent<AudioSource>();
 		Name = enemyData.enemyName;
 		Health = enemyData.health;
 		AttackDamage = enemyData.attackDamage;
@@ -69,8 +71,10 @@ public class Entites : MonoBehaviour, IHealth
 		speed = enemyData.speed;
 
 		healthAmount = Health;
-		//rb = GetComponent<Rigidbody>();
-		Garrison.GarrisonDestroyed += StopMovement;
+		PlayStartAudio();
+        StartCoroutine(PlayAudioIdle(enemyData.DelayBetweenAudios));
+        //rb = GetComponent<Rigidbody>();
+        Garrison.GarrisonDestroyed += StopMovement;
 
 		//tried to do it with an event but didnt worked worked perfect on the update 
 		Tower.TowerDestroyed += ChangeTargetTower;
@@ -231,5 +235,30 @@ public class Entites : MonoBehaviour, IHealth
 		}
 		else { hpCanvas.enabled = false; }
 	}
+	private void PlayStartAudio()
+	{
+		if(audioSource!= null)
+		{
+			audioClip = enemyData.startingAudio;
+			audioSource.clip = audioClip;
+			audioSource.Play();
+
+		}
+	}
 	
+
+    IEnumerator PlayAudioIdle(float delay)
+    {
+        yield return new WaitForSeconds(5.0f); // initial delay before the loop starts
+
+		audioClip = enemyData.idleAudio;
+		audioSource.clip = audioClip;
+        while (true)
+        {
+           
+            audioSource.Play();
+
+            yield return new WaitForSeconds(delay); // wait for the specified delay
+        }
+    }
 }

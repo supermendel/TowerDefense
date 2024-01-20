@@ -15,6 +15,10 @@ public class Enemy : ScriptableObject
 	public float speed;
 	public GameObject model;
 
+	public AudioClip startingAudio;
+    public AudioClip idleAudio;
+	public float DelayBetweenAudios;
 
-	
+
+
 }
