@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Pumpkin
   m_EditorClassIdentifier: 
   enemyName: 
-  health: 80
+  health: 120
   attackDamage: 12
-  timeToComplete: 50
+  timeToComplete: 45
   coinsAmount: 45
   attackRate: 0
   speed: 0

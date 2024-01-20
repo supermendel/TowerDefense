@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: 
   enemyName: Zombie
-  health: 30
+  health: 80
   attackDamage: 8
-  timeToComplete: 45
+  timeToComplete: 35
   coinsAmount: 25
   attackRate: 0
   speed: 0
   model: {fileID: 0}
-  DeadAudio: {fileID: 8300000, guid: 5ce6bb262e363834db2b5cdef8a21155, type: 3}
   idleAudio: {fileID: 8300000, guid: 0547b940dba4d964e9e447af1dc0759a, type: 3}
   DelayBetweenAudios: 5
