@@ -20,3 +20,6 @@ MonoBehaviour:
   attackRate: 0
   speed: 0
   model: {fileID: 5021617788933747501, guid: 7554e5e08a1755e42a58e0389cb7ae0d, type: 3}
+  DeadAudio: {fileID: 8300000, guid: a4366158371c9514cae30cfff454dcb2, type: 3}
+  idleAudio: {fileID: 8300000, guid: 90054576c036ea44096d20cc89ff4da2, type: 3}
+  DelayBetweenAudios: 5

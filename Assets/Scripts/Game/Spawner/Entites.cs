@@ -71,7 +71,7 @@ public class Entites : MonoBehaviour, IHealth
 		speed = enemyData.speed;
 
 		healthAmount = Health;
-		PlayStartAudio();
+		
         StartCoroutine(PlayAudioIdle(enemyData.DelayBetweenAudios));
         //rb = GetComponent<Rigidbody>();
         Garrison.GarrisonDestroyed += StopMovement;
@@ -128,6 +128,7 @@ public class Entites : MonoBehaviour, IHealth
 
 		if (healthAmount <= 0)
 		{
+			
 			Destroy(this.gameObject);
 			LevelManager.coins += coinsAmount;
 			return;
@@ -235,21 +236,12 @@ public class Entites : MonoBehaviour, IHealth
 		}
 		else { hpCanvas.enabled = false; }
 	}
-	private void PlayStartAudio()
-	{
-		if(audioSource!= null)
-		{
-			audioClip = enemyData.startingAudio;
-			audioSource.clip = audioClip;
-			audioSource.Play();
-
-		}
-	}
+	
 	
 
     IEnumerator PlayAudioIdle(float delay)
     {
-        yield return new WaitForSeconds(5.0f); // initial delay before the loop starts
+        yield return new WaitForSeconds(2f); // initial delay before the loop starts
 
 		audioClip = enemyData.idleAudio;
 		audioSource.clip = audioClip;
