@@ -43,6 +43,7 @@ public class Entites : MonoBehaviour, IHealth
 	private float attackCd;
 	private Rigidbody rb;
 	private bool arrivedTower;
+#nullable enable
 	private AudioSource audioSource;
 	private AudioClip audioClip;
 	private void Awake()

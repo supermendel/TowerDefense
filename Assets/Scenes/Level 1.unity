@@ -1389,7 +1389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217358617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.31, y: 1, z: 4.86}
+  m_LocalPosition: {x: -29.99, y: 9.5, z: -98.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1872,7 +1872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425477437}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.11, y: 1, z: 34.03}
+  m_LocalPosition: {x: 13.7, y: 9.5, z: -101.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1934,10 +1934,10 @@ MonoBehaviour:
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     delay: 1
   timeBetweenWaves: 5
-  nonSplineEnemies: {fileID: 5179807741351087800, guid: 093df6b773a38c848bdb50ef1a0c0927, type: 3}
+  nonSplineEnemies: {fileID: 7585120813365172264, guid: c7c38fbc1b3542140acff7dc60b5a2eb, type: 3}
   levelData: {fileID: 11400000, guid: d9d97d8c7862c034aa0cad99fb06f890, type: 2}
   count: 2
-  timeEnemySpawner: 15
+  timeEnemySpawner: 6
   coinsData: {fileID: 11400000, guid: 6b0c9a763c071004ab4bf2786e9d72f5, type: 2}
   coinsPerWin: 50
   pointA: {fileID: 1425477438}
