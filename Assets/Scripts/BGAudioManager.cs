@@ -13,15 +13,38 @@ public class BGAudioManager : MonoBehaviour
 
     private AudioSource bgAudio;
 
-    private void Start()
+    private void Awake()
     {
         bgAudio = GetComponent<AudioSource>();
+        WaveManager.WaveCoimplete += ChangeMusic;
+    }
+    private void Start()
+    {
+        
+
+        ChangeMusic();
         
     }
     public void SetBuildingBackground()
     {
       currentAudio = buildingAudio;
-      bgAudio.clip = currentAudio;
-      bgAudio.Play();
+     
+    }
+    public void SetLevelAudio()
+    {
+        currentAudio = levelAudio;
+    }
+    public void ChangeMusic()
+    {
+        if(LevelManager.state == SpawnState.Building)
+        {
+            SetBuildingBackground();
+        }
+        else
+        {
+            SetLevelAudio();
+        }
+        bgAudio.clip = currentAudio;
+        bgAudio.Play();
     }
 }
