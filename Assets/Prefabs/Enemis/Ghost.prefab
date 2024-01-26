@@ -822,6 +822,7 @@ MonoBehaviour:
     m_ObjectData:
       m_Data: []
   splineScript: {fileID: 0}
+  animator: {fileID: 4585772615346438738}
 --- !u!195 &289709662598489612
 NavMeshAgent:
   m_ObjectHideFlags: 0

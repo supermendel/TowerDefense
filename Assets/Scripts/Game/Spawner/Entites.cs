@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AI;
@@ -45,8 +46,11 @@ public class Entites : MonoBehaviour, IHealth
 	private bool arrivedTower;
 #nullable enable
 	private AudioSource audioSource;
+#nullable enable
 	private AudioClip audioClip;
-	private void Awake()
+#nullable enable
+	[SerializeField] Animator animator;
+    private void Awake()
 	{
 		
 		if (isSplined)
@@ -57,8 +61,8 @@ public class Entites : MonoBehaviour, IHealth
 		}
 		else
 			nav = GetComponent<NavMeshAgent>();
-
-	}
+            animator = GetComponent<Animator>();
+    }
 	private void Start()
 	{
 		//spline = splineScript.splineContainer.GetComponent<Spline>();
@@ -72,8 +76,11 @@ public class Entites : MonoBehaviour, IHealth
 		speed = enemyData.speed;
 
 		healthAmount = Health;
-		
-        StartCoroutine(PlayAudioIdle(enemyData.DelayBetweenAudios));
+
+		if (audioSource != null)
+		{
+			StartCoroutine(PlayAudioIdle(enemyData.DelayBetweenAudios));
+		}
         //rb = GetComponent<Rigidbody>();
         Garrison.GarrisonDestroyed += StopMovement;
 
@@ -193,14 +200,16 @@ public class Entites : MonoBehaviour, IHealth
 	}
 	public void MoveToAttackTower()
 	{
-
 		if (attTower == null) return;
-		
-		Vector3 dir = attTower.transform.position - this.transform.position;
+         
+		float speed = nav.velocity.magnitude;
+        Vector3 dir = attTower.transform.position - this.transform.position;
 		float distanceToTarget = dir.magnitude;
 		if (distanceToTarget > nav.stoppingDistance  && arrivedTower == false)
 		{
 			nav.SetDestination(attTower.transform.position);
+			Debug.Log(speed);
+			animator.SetFloat("Speed", speed);
 		}	
 		else
 		{
@@ -242,6 +251,7 @@ public class Entites : MonoBehaviour, IHealth
 
     IEnumerator PlayAudioIdle(float delay)
     {
+		
         yield return new WaitForSeconds(2f); // initial delay before the loop starts
 
 		audioClip = enemyData.idleAudio;
