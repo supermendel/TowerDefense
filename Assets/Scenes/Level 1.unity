@@ -1934,7 +1934,7 @@ MonoBehaviour:
     - {fileID: 8551092484610564762, guid: f03db775a21259e4b9644abed290e9c0, type: 3}
     delay: 1
   timeBetweenWaves: 5
-  nonSplineEnemies: {fileID: 7585120813365172264, guid: c7c38fbc1b3542140acff7dc60b5a2eb, type: 3}
+  nonSplineEnemies: {fileID: 2480124748722758576, guid: 84713035b097d1244a5cda2e8c256c1f, type: 3}
   levelData: {fileID: 11400000, guid: d9d97d8c7862c034aa0cad99fb06f890, type: 2}
   count: 2
   timeEnemySpawner: 6
@@ -4001,23 +4001,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: 6.01
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 101.67
+      value: 13.531
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -122.8
+      value: -157.42
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.97361207
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0.2282094
       objectReference: {fileID: 0}
     - target: {fileID: 5817134738803278647, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4045,7 +4045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228313336668387606, guid: 8394ce5245014014fb4fdedae6ec20dc, type: 3}
       propertyPath: field of view
-      value: 60.000004
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

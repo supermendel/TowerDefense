@@ -214,10 +214,10 @@ public class Entites : MonoBehaviour, IHealth
 		else
 		{
 			arrivedTower = true;
-		
+			
 		}
-		
-	}
+        animator.SetBool("CanAttack", arrivedTower);
+    }
 
 	//killing the enemies who attack towers for now
 	public void KillTowerEnemies()
