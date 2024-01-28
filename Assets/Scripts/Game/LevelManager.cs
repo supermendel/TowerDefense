@@ -89,11 +89,9 @@ public class LevelManager : MonoBehaviour
 				currentBuildingTime = 0;
 				ReadyClicked();
 			}
-
         }
 		else
 		{
-
 			HideUi();
 		}
 	}
@@ -120,7 +118,6 @@ public class LevelManager : MonoBehaviour
 	public void SetBuildingTime()
 	{
         currentBuildingTime = buildingTime;
-
     }
     public void ShowLoseCanvas()
 	{

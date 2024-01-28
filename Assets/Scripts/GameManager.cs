@@ -36,7 +36,10 @@ public class GameManager : MonoBehaviour
 			
 	}
 
-
+	public void Alert(string name)
+	{
+		//Do something
+	}
 
 	
 	

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net;
 using UnityEngine;
 
-public class Tower : MonoBehaviour,IHealth
+public class Tower : MonoBehaviour,IHealth,IAlertPublisher
 {
 	[Header("Info")]
 	public float range;
@@ -31,8 +31,9 @@ public class Tower : MonoBehaviour,IHealth
 
 	
 	public static event Action TowerDestroyed;
+	public static event Action TowerTookDamage;
 
-	private void Start()
+    private void Start()
 	{
 		canAttack = true;
 		health = 100;
@@ -165,9 +166,16 @@ public class Tower : MonoBehaviour,IHealth
 			Destroy(this.gameObject);
 			return;
 		}
+		SendAlert($"{this.gameObject.name} took:{damage} Damage");
+		
 	}
 	private void OnDisable()
 	{
 		TowerDestroyed?.Invoke();
 	}
+
+    public void SendAlert(string message)
+    {
+        AlertManager.Instance.ReceiveAlert(message);
+    }
 }

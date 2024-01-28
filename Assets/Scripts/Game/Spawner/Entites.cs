@@ -209,7 +209,6 @@ public class Entites : MonoBehaviour, IHealth
 		if (distanceToTarget > nav.stoppingDistance  && arrivedTower == false)
 		{
 			nav.SetDestination(attTower.transform.position);
-			Debug.Log(speed);
 			animator.SetFloat("Speed", speed);
 		}	
 		else
