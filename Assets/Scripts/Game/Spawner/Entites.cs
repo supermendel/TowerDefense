@@ -184,6 +184,7 @@ public class Entites : MonoBehaviour, IHealth
 			tower.GetComponent<Tower>().TakeDamage(AttackDamage);
 
 		}
+		animator.SetFloat("TimeBetweenAttacks", attackCd);
 	}
 
 	private void LookAtTower()
@@ -191,7 +192,7 @@ public class Entites : MonoBehaviour, IHealth
 		if (isSplined) return;
 		if (attTower != null)
 		{
-			this.transform.rotation = Quaternion.LookRotation((this.transform.position - attTower.transform.position).normalized);
+			this.transform.rotation = Quaternion.LookRotation(-(this.transform.position - attTower.transform.position).normalized);
 		}
 		else
 		{
