@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5342682422541414692}
   - component: {fileID: 449061911921758106}
   - component: {fileID: 8230406277731187398}
+  - component: {fileID: -1503163779097644840}
   m_Layer: 0
   m_Name: IceBeam
   m_TagString: Untagged
@@ -161,3 +162,27 @@ MonoBehaviour:
   damage: 0
   splashDamage: 0
   splashRadius: 0
+  isSlow: 1
+  vFX: {fileID: 0}
+--- !u!64 &-1503163779097644840
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275842109581085276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

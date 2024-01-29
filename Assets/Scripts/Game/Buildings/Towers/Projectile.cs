@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 	public int damage;
 	public bool splashDamage = false;
 	public float splashRadius = 0;
-
+	public bool isSlow;
 
 	private Vector3 oldPos;
 	private float distanceTraveled = 0;

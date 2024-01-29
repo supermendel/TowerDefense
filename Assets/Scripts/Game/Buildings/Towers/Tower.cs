@@ -152,6 +152,7 @@ public class Tower : MonoBehaviour,IHealth,IAlertPublisher
 		{
 			fireCooldown = arrackRate;
 			currentEntity.GetComponent<Entites>().TakeDamage(attackPower);
+
 		}
 	}
 

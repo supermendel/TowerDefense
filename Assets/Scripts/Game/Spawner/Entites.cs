@@ -50,6 +50,7 @@ public class Entites : MonoBehaviour, IHealth
 	private AudioClip audioClip;
 #nullable enable
 	[SerializeField] Animator animator;
+	[SerializeField] GameObject slowEffect;
     private void Awake()
 	{
 		
@@ -114,6 +115,7 @@ public class Entites : MonoBehaviour, IHealth
 			}
 			KillTowerEnemies();
 		}
+		ApplySlow();
 		
 	}
 
@@ -263,5 +265,22 @@ public class Entites : MonoBehaviour, IHealth
 
             yield return new WaitForSeconds(delay); // wait for the specified delay
         }
+    }
+
+	public void ApplySlow()
+	{
+		
+		if (slowEffect == null) return;
+		
+		if (!isSlowed)
+		{
+			slowEffect.SetActive(false);
+		}
+		else
+		{
+			slowEffect.SetActive(true);
+			slowEffect.GetComponent<ParticleSystem>().Play();
+		}
+        //Do Slow
     }
 }
