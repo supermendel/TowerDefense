@@ -6,6 +6,7 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 using UnityEngine.Splines;
 using UnityEngine.UI;
 
@@ -50,7 +51,9 @@ public class Entites : MonoBehaviour, IHealth
 	private AudioClip audioClip;
 #nullable enable
 	[SerializeField] Animator animator;
-	[SerializeField] GameObject slowEffect;
+    [SerializeField] ParticleSystem slowEffect;
+    private bool isTakingDamage;
+	private float timeFromDamageCounter;
     private void Awake()
 	{
 		
@@ -97,7 +100,7 @@ public class Entites : MonoBehaviour, IHealth
 
 	private void Update()
 	{
-		
+		IsStillTakingDamage();
 		ShowHealthBar();
 		if (isSplined)
 		{
@@ -115,7 +118,16 @@ public class Entites : MonoBehaviour, IHealth
 			}
 			KillTowerEnemies();
 		}
-		ApplySlow();
+		if (isTakingDamage)
+		{
+            timeFromDamageCounter -= Time.deltaTime;
+        }
+		if(isTakingDamage && !IsStillTakingDamage())
+		{
+			isTakingDamage = false;
+		}
+		//ApplySlow();
+		Debug.Log(IsStillTakingDamage());
 		
 	}
 
@@ -133,15 +145,20 @@ public class Entites : MonoBehaviour, IHealth
 
 	public void TakeDamage(int damage)
 	{
-		healthAmount -= damage;
-		healthBar.fillAmount = ((float)healthAmount) / Health;
-
-		if (healthAmount <= 0)
+		if (!isTakingDamage)
 		{
-			
-			Destroy(this.gameObject);
-			LevelManager.coins += coinsAmount;
-			return;
+			timeFromDamageCounter = 1.5f;
+			healthAmount -= damage;
+			healthBar.fillAmount = ((float)healthAmount) / Health;
+
+			if (healthAmount <= 0)
+			{
+
+				Destroy(this.gameObject);
+				LevelManager.coins += coinsAmount;
+				return;
+			}
+			isTakingDamage = true;
 		}
 	}
 
@@ -266,21 +283,30 @@ public class Entites : MonoBehaviour, IHealth
             yield return new WaitForSeconds(delay); // wait for the specified delay
         }
     }
-
-	public void ApplySlow()
+	private bool IsStillTakingDamage()
 	{
 		
-		if (slowEffect == null) return;
 		
-		if (!isSlowed)
+		if(timeFromDamageCounter > 0)
 		{
-			slowEffect.SetActive(false);
+			return true;
 		}
-		else
-		{
-			slowEffect.SetActive(true);
-			slowEffect.GetComponent<ParticleSystem>().Play();
-		}
-        //Do Slow
-    }
+		
+		return false;
+	}
+	//public void ApplySlow()
+	//{
+		
+	//	if (slowEffect == null) return;
+		
+	//	if (!isSlowed )
+	//	{
+	//		slowEffect.GetComponent<ParticleSystem>().Stop();
+	//	}
+	//	else
+	//	{
+	//		slowEffect.GetComponent<ParticleSystem>().Play();		
+	//	}
+ //       //Do Slow
+ //   }
 }
